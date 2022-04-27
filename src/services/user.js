@@ -4,10 +4,10 @@ const fetchUser = async () => {
       apikey: process.env.REACT_APP_SUPABASE_KEY,
       Authorization: `Bearer ${process.env.REACT_APP_SUPABASE_KEY}`,
     },
-  })
+  });
 
-  const userData = await response.json()
-  return userData[0]
-}
+  const userData = await response.json();
+  return userData[0];
+};
 
-export default fetchUser
+export default fetchUser;
