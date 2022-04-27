@@ -7,6 +7,7 @@ const fetchUser = async () => {
   });
 
   const userData = await response.json();
+
   return userData[0];
 };
 
